@@ -1,4 +1,4 @@
-<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/extras/php/"; include($IPATH."up.php"); ?>
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/ViL2/extras/php/"; include($IPATH."up.php"); ?>
 
 <div id="main">
   <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Introduction</span>
@@ -17,4 +17,4 @@ This experiment enables a student to learn
 
 </div>
 
-<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/extras/php/"; include($IPATH."sideNav.php"); ?>	
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/ViL2/extras/php/"; include($IPATH."sideNav.php"); ?>	
