@@ -17,4 +17,4 @@ This experiment enables a student to learn
 
 </div>
 
-<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/ViL2/extras/php/"; include($IPATH."sideNav.php"); ?>	
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/extras/php/"; include($IPATH."sideNav.php"); ?>	
