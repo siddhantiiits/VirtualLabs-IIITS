@@ -1,0 +1,388 @@
+<html>
+<head>
+<title>Logic Gate</title>
+<script>
+function onbu() {
+document.getElementById("chartContainer").style.display="block";
+document.getElementById("ex").style.display="block";
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "TTL NAND GATE"
+	},
+	axisY:{
+		title:"NAND2 OUTPUT(V)",
+		includeZero: false
+	},
+	axisX:{
+		title:"NAND2 INPUT(V)",
+		includeZero: false
+	},
+	data: [{
+		type: "line",       
+		dataPoints: [
+			{ y: 3.94, x:0 },
+			{ y: 3.92, x:0.2},
+			{ y: 3.76, x:0.4},
+			{ y: 3.53, x:0.6},
+			{ y: 3.22, x:0.8},
+			{ y: 2.02, x:1.0},
+			{ y: 0.31, x:1.2},
+			{ y: 0.17, x:1.4},
+			{ y: 0.15, x:1.6},
+			{ y: 0.15, x:1.8},
+			{ y: 0.15, x:2.0},
+			{ y: 0.15, x:2.2},
+			{ y: 0.15, x:2.4},
+			{ y: 0.15, x:2.6},
+			{ y: 0.15, x:2.8},
+			{ y: 0.15, x:3.0},
+			{ y: 0.15, x:3.2},
+			{ y: 0.15, x:3.4},
+			{ y: 0.15, x:3.6},
+			{ y: 0.15, x:3.8},
+			{ y: 0.15, x:4.0},
+			{ y: 0.15, x:4.2},
+			{ y: 0.15, x:4.4},
+			{ y: 0.15, x:4.6},
+			{ y: 0.15, x:4.8},
+			{ y: 0.15, x:5.0}
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<script>
+
+function a()
+{
+
+    var x = document.getElementById("myRange").value;
+    var y = document.getElementById("demo").value = x;
+	
+	if (y==0)
+	{
+	document.getElementById("n1").value = 0.63;
+	document.getElementById("n2").value = 0.17;
+	document.getElementById("n3").value = 4.98;
+	document.getElementById("n4").value = 0.00;
+	document.getElementById("n5").value = 4.97;
+	document.getElementById("n6").value = 4.46;
+	document.getElementById("n7").value = 3.94;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==0.2)
+	{
+	document.getElementById("n1").value = 0.82;
+	document.getElementById("n2").value = 0.37;
+	document.getElementById("n3").value = 4.93;
+	document.getElementById("n4").value = 0.02;
+	document.getElementById("n5").value = 4.97;
+	document.getElementById("n6").value = 4.43;
+	document.getElementById("n7").value = 3.92;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==0.4)
+	{
+	document.getElementById("n1").value = 1.02;
+	document.getElementById("n2").value = 0.56;
+	document.getElementById("n3").value = 4.77;
+	document.getElementById("n4").value = 0.12;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 4.27;
+	document.getElementById("n7").value = 3.76;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==0.6)
+	{
+	document.getElementById("n1").value = 1.21;
+	document.getElementById("n2").value = 0.76;
+	document.getElementById("n3").value = 4.54;
+	document.getElementById("n4").value = 0.28;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 4.04;
+	document.getElementById("n7").value = 3.53;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==0.8)
+	{
+	document.getElementById("n1").value = 1.40;
+	document.getElementById("n2").value = 0.96;
+	document.getElementById("n3").value = 4.26;
+	document.getElementById("n4").value = 0.45;
+	document.getElementById("n5").value = 4.97;
+	document.getElementById("n6").value = 3.75;
+	document.getElementById("n7").value = 3.22;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==1)
+	{
+	document.getElementById("n1").value = 1.60;
+	document.getElementById("n2").value = 1.15;
+	document.getElementById("n3").value = 3.21;
+	document.getElementById("n4").value = 0.60;
+	document.getElementById("n5").value = 4.91;
+	document.getElementById("n6").value = 2.62;
+	document.getElementById("n7").value = 2.02;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==1.2)
+	{
+	document.getElementById("n1").value = 1.78;
+	document.getElementById("n2").value = 1.33;
+	document.getElementById("n3").value = 1.57;
+	document.getElementById("n4").value = 0.72;
+	document.getElementById("n5").value = 4.86;
+	document.getElementById("n6").value = 0.92;
+	document.getElementById("n7").value = 0.31;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==1.4)
+	{
+	document.getElementById("n1").value = 1.93;
+	document.getElementById("n2").value = 1.49;
+	document.getElementById("n3").value = 1.29;
+	document.getElementById("n4").value = 0.82;
+	document.getElementById("n5").value = 4.93;
+	document.getElementById("n6").value = 0.73;
+	document.getElementById("n7").value = 0.17;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==1.6)
+	{
+	document.getElementById("n1").value = 2.02;
+	document.getElementById("n2").value = 1.58;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.86;
+	document.getElementById("n5").value = 4.93;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==1.8)
+	{
+	document.getElementById("n1").value = 2.08;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.29;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==2)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==2.2)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==2.4)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==2.6)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==2.8)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==3)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==3.2)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==3.4)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==3.6)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==3.8)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==4)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==4.2)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==4.4)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==4.6)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==4.8)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="none";
+	}
+	else if (y==5)
+	{
+	document.getElementById("n1").value = 2.09;
+	document.getElementById("n2").value = 1.64;
+	document.getElementById("n3").value = 1.11;
+	document.getElementById("n4").value = 0.89;
+	document.getElementById("n5").value = 4.98;
+	document.getElementById("n6").value = 0.64;
+	document.getElementById("n7").value = 0.15;
+	document.getElementById("bu").style.display="block";
+	}
+}
+function ee()
+{
+document.getElementById("chartContainer").style.display="none";
+document.getElementById("ex").style.display="none";
+}
+</script>
+<link rel="stylesheet" media="only screen and (color)" href="cstyle.css" />
+</head>
+<body>
+<div class="out">
+<div class="head">
+</div>
+<div class="in1">
+	<center><span style="font-size: 30px;color:red "><br> Logic Gate </span></center>
+<div class="in">
+<img src="ttl_nand1.jpg" style="height:100%; width:100%;">
+
+<!--<p id="demo">0</p>-->
+<input value="0" readonly id="demo">
+<input type="range" id="myRange" value="0" step="0.2" min="0" max="5" onchange=a();>
+<input readonly id="n1">
+<input readonly id="n2">
+<input readonly id="n3">
+<input readonly id="n4">
+<input readonly id="n5">
+<input readonly id="n6">
+<input readonly id="n7">
+<!-- <button type="button" id="bu" onclick="onbu()">Characteristic Plot</button>
+<button type="button" id="ex" onclick="ee()">Exit</button> -->
+<div id="chartContainer" style="display:none;"></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

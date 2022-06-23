@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url("images/DE.png");
+background-position: 250px 220px; 
+background-attachment: fixed;
+/*background-blend-mode: multiply;*/
+  /*margin-right: 200px;*/
+  /*margin-top: 400px;*/
+  /*z-index: -10;*/
+
+
+  background-repeat: no-repeat;
+  background-size: 898px 628px;
+}
+
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #FFFFFF;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #3b3b3b;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  font-size: 1em;
+  text-transform: uppercase;
+  outline: 0;
+  color: white;
+  
+  
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #E24E2A;
+  color: white;
+
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg1 {
+  background-color: #aaa;
+  background-image: url(instimg.jpg);
+  background-size: 390px 220px;
+
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  
+
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  height: 20px;
+  /*padding: 15px;*/
+  text-align: center;
+  z-index: 2;
+  background: #3b3b3b;
+}
+.sidenav {
+ 
+
+  width: 0;
+  position: absolute;
+ height: 1000%;
+  z-index: 3;
+  top: 260px;
+  bottom: 0;
+  left: 0;
+  background-color:  #3b3b3b;
+  overflow-x: hidden;
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  font-size: 0.8em;
+  /*text-transform: uppercase;*/
+  outline: 0;
+  line-height: 25px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  
+  color: #d6d6d6;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  
+}
+.blinking{
+    animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #FF0000;    }
+    49%{    color: #FF0000; }
+    60%{    color: #d6d6d6; }
+    99%{    color: #d6d6d6;  }
+    100%{   color: #FF0000;    }
+}
+.text{
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  
+  position: absolute;
+  left: 50px;
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>

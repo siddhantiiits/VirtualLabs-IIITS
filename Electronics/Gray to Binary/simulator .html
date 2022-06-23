@@ -1,0 +1,142 @@
+<!-- Gray to Binary -->
+<html>
+<head>
+<style>
+#img1{
+	height:85%;
+	width:95%;
+	position: absolute;
+    top: 12%;
+    left: 5%;
+}
+#i10{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 83%;
+    right: 77.5%;
+}
+#i14{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 76.2%;
+    right: 77.5%;
+}
+#i1{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 60.5%;
+    right: 77.5%;
+}
+#i2{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 55.5%;
+    right: 77.5%;
+}
+#i5{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 39.1%;
+    right: 77.5%;
+}
+#i7{
+	height:3%;
+	width:2.25%;
+	position: absolute;
+    bottom: 23.5%;
+    right: 77.5%;
+}
+#i1b{
+	height:5.5%;
+	width:3.5%;
+	position: absolute;
+    bottom: 72%;
+    right: 69.4%;
+}
+#i3{
+	height:4.5%;
+	width:3.5%;
+	position: absolute;
+    bottom: 52%;
+    right: 69.4%;
+}
+#i6{
+	height:4.7%;
+	width:3.5%;
+	position: absolute;
+    bottom: 35.4%;
+    right: 69.5%;
+}
+#i8{
+	height:4.8%;
+	width:3.5%;
+	position: absolute;
+    bottom: 29.8%;
+    right: 16%;
+}
+.out{
+	background-image: url("back.jpeg");
+	background-size: 90px 90px;
+	width:100%;
+	height:100%;
+}
+.in{
+width:80%;
+height:90%;
+border: 1px solid #808080;
+background-color: #FFFFFF;
+position:relative;
+top:5%;
+left:10%;
+}
+.blinking{
+    animation:blinkingText 1.3s infinite;
+    position: absolute;
+    bottom: 15%;
+    left: 60%;
+    font-weight: 15px;
+}
+@keyframes blinkingText{
+    0%{     color: #FF0000;    }
+    49%{    color: #FF0000; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #FF0000;    }
+}
+
+</style>
+<script type="text/javascript" src="c.js">
+</script>
+</head>
+<body>
+<div class="out">
+<div class="in">
+	<center><span style="font-size: 30px;color:red "> Gray to Binary Code Converter</span></center>
+<img src="main.png" id="img1">
+<span class="blinking" id="blinktext"> </span>
+
+<img id="i10" onclick="a10()" src="off.png">
+<img id="i14" onclick="a14()" src="off.png">
+<img id="i1" onclick="a1()" src="off.png">
+<img id="i2" onclick="a2()" src="off.png">
+<img id="i5" onclick="a5()" src="off.png">
+<img id="i7" onclick="a7()" src="off.png">
+
+
+<img id="i1b"  src="offlight.png">
+<img id="i3"  src="offlight.png">
+<img id="i6"  src="offlight.png">
+<img id="i8"  src="offlight.png">
+
+
+
+</div>
+</div>
+</body>
+</html>
+

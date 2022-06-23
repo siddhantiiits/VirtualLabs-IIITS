@@ -1,0 +1,210 @@
+<!-- Comparator -->
+<html>
+<head>
+<style>
+#img1{
+	height:70%;
+	width:78%;
+	position: absolute;
+    top: 15%;
+    left: 11%;
+}
+#i8{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 73.1%;
+}
+#i4{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 70.2%;
+}
+#i3{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 64.3%;
+}
+#i2{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 59.5%;
+}
+#i1{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 54.7%;
+}
+#i16{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 50.6%;
+}
+#i15{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 45.3%;
+}
+#i14{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 39.8%;
+}
+#i13{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 73.3%;
+    right: 35.1%;
+}
+#i12{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 74.2%;
+    right: 30.3%;
+}
+#i11{
+	height:3.4%;
+	width:2.4%;
+	position: absolute;
+    bottom: 71.6%;
+    right: 18.8%;
+}
+#i10{
+	height:3.4%;
+	width:2.4%;
+	position: absolute;
+    bottom: 71.6%;
+    right: 16.25%;
+}
+#i9{
+	height:3.5%;
+	width:2.5%;
+	position: absolute;
+    bottom: 71.6%;
+    right: 13.7%;
+}
+#i5{
+	height:5%;
+	width:3.3%;
+	position: absolute;
+    bottom: 37.8%;
+    right: 57.6%;
+}
+#i6{
+	height:5%;
+	width:3.3%;
+	position: absolute;
+    bottom: 31.8%;
+    right: 58.1%;
+}
+#i7{
+	height:5%;
+	width:3.3%;
+	position: absolute;
+    bottom: 25.8%;
+    right: 58.1%;
+}
+#volt{
+	position: absolute;
+	bottom: 31.5%;
+	left: 12%;
+}
+#cin{
+	position: absolute;
+	bottom: 31.5%;
+	left: 52%;
+	font-weight: bold;
+	font-size: 15px;
+}
+.out{
+	background-image: url("back.jpeg");
+	background-size: 90px 90px;
+	width:100%;
+	height:100%;
+}
+.in{
+width:70%;
+height:85%;
+border: 1px solid #808080;
+background-color: #FFFFFF;
+position:relative;
+top:8%;
+left:14%;
+}
+.blinking{
+    animation:blinkingText 1.3s infinite;
+    position: absolute;
+    bottom: 15%;
+    left: 60%;
+    font-weight: 15px;
+}
+@keyframes blinkingText{
+    0%{     color: #FF0000;    }
+    49%{    color: #FF0000; }
+    60%{    color: #FF0000; }
+    99%{    color: transparent;  }
+    100%{   color: #FF0000;    }
+}
+#override{
+	width:12.5%;
+	height:29%;
+	position: absolute;
+	top:47.35%;
+	left:51.1%;
+}
+</style>
+<script type="text/javascript" src="c.js">
+</script>
+</head>
+<body>
+<div class="out">
+<div class="in">
+	<center><span style="font-size: 30px;color:red "> Comparator </span></center>
+	
+<img src="main.png" id="img1">
+<img src="override.png" id="override">
+<span class="blinking" id="blinktext"> </span>
+
+<img id="i8" onclick="a8()" src="off.png">
+<img id="i4" onclick="a4()" src="off.png">
+<img id="i3" onclick="a3()" src="off.png">
+<img id="i2" onclick="a2()" src="off.png">
+<img id="i1" onclick="a1()" src="off.png">
+<img id="i16" onclick="a16()" src="off.png">
+<img id="i15" onclick="a15()" src="off.png">
+<img id="i14" onclick="a14()" src="off.png">
+<img id="i13" onclick="a13()" src="off.png">
+<img id="i12" onclick="a12()" src="off.png">
+<img id="i11" onclick="a11()" src="off.png">
+<img id="i10" onclick="a10()" src="off.png">
+<img id="i9" onclick="a9()" src="off.png">
+
+<img id="i5"  src="offlight.png">
+<img id="i6"  src="offlight.png">
+<img id="i7"  src="offlight.png">
+
+
+
+
+</div>
+</div>
+</body>
+</html>
+

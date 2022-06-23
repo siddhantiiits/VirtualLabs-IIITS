@@ -1,0 +1,209 @@
+<!-- 
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/ViL2/extras/php/"; include($IPATH."up.php"); ?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Developers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+.pos{
+    position: absolute;
+    top: 28%;
+    left:8.5%;
+}
+.demo{ background: #262526; }
+.our-team{
+    padding: 20px 15px 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background: #17bebb;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: #17bebb;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #17bebb;
+    border: 1px solid #17bebb;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+.devhead{
+    
+    color: white;
+    position: absolute;
+    top: -20%;
+    left:2%;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+display: inline-block;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    padding-right: 0.50em;
+    border-right: 1px solid rgba(0,0,0,.3);
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+</style>
+</head>
+<body style="background-color: #181818; background-image: url(bg.jpg)" >
+    <div id="header-wrapper">
+    <div id="header" class="container">
+        <div id="logo">
+            <h1><a href="#"> VIRTUAL LABS</a></h1>
+            <span>By <a href="http://iiitsonepat.ac.in">IIIT Sonepat</a></span> </div>
+        <div id="menu">
+            <ul>
+                <li ><a href="../HomePage/Home.html" accesskey="1" title=""><span style="padding: 0em 1.5em;">Homepage</span></a></li>
+                <li><div class="dropdown "><a href="#" accesskey="2" class="dropbtn" title=""><span style="padding: 0em 1.5em;">Subjects  <i class="arrow down"></i></span></a>
+                <div class="dropdown-content">
+                 <a href="../Electronics/list.html">Digital Electronics</a>
+                  <a href="#">Data Structures</a>
+                  <!-- <a href="#">Link 3</a> -->
+                  </div></div></li>
+                <li><a href="../Developers/Login.html" accesskey="3" title=""><span style="padding: 0em 1.5em;">Login</span></a></li>
+                <span style="padding: 0em 1.5em;"><li class="current_page_item"><a href="#" accesskey="4" title="">Developers</a></li></span>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="pos">
+
+    <div class="container">
+        <div class="devhead"> Our Team </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img1.jpg">
+                </div>
+                <h3 class="title">Dr. Mukesh Mann</h3>
+                <span class="post">Faculty Mentor<br>Department of CSE<br>IIIT Sonepat</span>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/mukesh.mann" class="fa fa-facebook-square"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mukesh-mann-2a85b2b9" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="https://www.instagram.com/mukesh.gbu/" class="fa fa-instagram"></a></li>
+                    <li><a href="mailto:mukesh.gbu@gmail.com" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+ 
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img2.jpg">
+                </div>
+                <h3 class="title">Siddhant Tiwari</h3>
+                <span class="post">Simulation Designs and Front End<br>Department of CSE<br>IIIT Sonepat</span>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/siddhant.tiwari.7965" class="fa fa-facebook-square"></a></li>
+                    <li><a href="https://www.linkedin.com/in/siddhant-t-822b35b8" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="https://instagram.com/siddhant_tiwari19?igshid=1fpd9i47n2p6d" class="fa fa-instagram"></a></li>
+                    <li><a href="mailto:siddhantslight@gmail.com" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img3.jpg">
+                </div>
+                 <h3 class="title">Pulkit Goyal</h3>
+                <span class="post">Simulation Logics and Back End<br>Department of CSE<br>IIIT Sonepat</span>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/pulkit0795" class="fa fa-facebook-square"></a></li>
+                    <li><a href="http://linkedin.com/in/pulkit-goyal-a84529165" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="https://www.instagram.com/pulkit0795/" class="fa fa-instagram"></a></li>
+                    <li><a href="mailto:pulkit0795@yahoo.com" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+ <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img4.jpg">
+                </div>
+                <h3 class="title">Pranati Gupta</h3>
+                <span class="post">Lab Manuals and Front End<br>Department of CSE<br>IIIT Sonepat</span>
+                <ul class="social">
+                    <li><a href="https://www.google.com/?client=safari&channel=mac_bm"  class="fa fa-facebook-square"></a></li>
+                    <li><a href= "" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="https://instagram.com/__pranati._?igshid=fzkt0kp6xp2a" class="fa fa-instagram"></a></li>
+                    <li><a href="mailto:pranati512@gmail.com" class="fa fa-envelope"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+</div>
+
+</div>
+<span style="position: absolute; bottom:-10px; left:7.5%; " >
+<div id="copyright" class="container">
+    <p>&copy; IIIT Sonepat. All rights reserved. | Virtual Labs</p>
+</div>
+</span>
+</body>
+
+</html>
+
